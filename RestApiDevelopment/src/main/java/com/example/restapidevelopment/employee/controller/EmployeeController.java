@@ -1,5 +1,7 @@
-package com.example.restapidevelopment.employee;
+package com.example.restapidevelopment.employee.controller;
 
+import com.example.restapidevelopment.employee.service.EmployeeService;
+import com.example.restapidevelopment.employee.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

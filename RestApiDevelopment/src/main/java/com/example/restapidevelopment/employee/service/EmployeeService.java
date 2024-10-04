@@ -1,5 +1,7 @@
-package com.example.restapidevelopment.employee;
+package com.example.restapidevelopment.employee.service;
 
+import com.example.restapidevelopment.employee.entity.Employee;
+import com.example.restapidevelopment.employee.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.util.List;

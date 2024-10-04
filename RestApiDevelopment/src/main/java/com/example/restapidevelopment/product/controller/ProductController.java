@@ -24,17 +24,7 @@ public class ProductController {
   @PostMapping
   public Product addProduct(@RequestBody Product product) {
     return service.saveProduct(product);
-//        //Create resource location
-//        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-//                .path("/{id}")
-//                .buildAndExpand(product.getId())
-//                .toUri();
-//
-//        //Send location in response
-//        return ResponseEntity.created(location).build();
-    //return Product;
   }
-
 
   @GetMapping
   public List<Product> findAllProducts() {
@@ -45,7 +35,6 @@ public class ProductController {
   public Product findProductById(@PathVariable int id) {
     return service.getProductById(id);
   }
-
 
   @PutMapping("/update/{id}")
   public Product updateProduct(@RequestBody Product product, @PathVariable int id) {

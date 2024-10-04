@@ -4,11 +4,11 @@ import com.example.restapidevelopment.product.entity.Product;
 import com.example.restapidevelopment.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
 public class ProductService {
+
   @Autowired
   private ProductRepository repository;
 
@@ -44,6 +44,4 @@ public class ProductService {
     existingProduct.setPrice(product.getPrice());
     return repository.save(existingProduct);
   }
-
-
 }

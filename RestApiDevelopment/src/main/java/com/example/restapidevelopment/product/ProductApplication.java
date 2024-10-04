@@ -12,17 +12,6 @@ public class ProductApplication {
   @Autowired
   private ProductRepository repository;
 
-  @PostConstruct
-  public void init() {
-//        repository.saveAll(
-//                Stream
-//                        .of(
-//                                new Product("Book", 1, 299),
-//                                new Product("mobile", 1, 39999))
-//                        .collect(Collectors.toList())
-//        );
-  }
-
   public static void main(String[] args) {
     SpringApplication.run(ProductApplication.class, args);
   }
